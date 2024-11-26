@@ -1,14 +1,6 @@
 # node files
 node_modules
-android/
-src/
-.prettierignore
-CapacitorSettings.podspec
-package-lock.json
-package.json
-Package.swift
-rollup.config.mjs
-.eslintignore
+dist/
 # iOS files
 Pods
 Podfile.lock
