@@ -298,8 +298,11 @@ public class CapacitorSettingsPlugin extends Plugin {
                     call.reject("Could not open battery optimization settings.");
                 }
             } else {
-                call.reject("Battery optimization already ignored for this app.");
-            }
+                JSObject response = new JSObject();
+                response.put("status", "enabled");
+                response.put("userSelection", "Allow");
+                response.put("message","Battery optimization already ignored for this app.");
+                call.resolve(response);            }
         } else {
             call.reject("Battery optimization settings are not available on this Android version.");
         }
