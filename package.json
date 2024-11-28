@@ -1,14 +1,19 @@
 {
   "name": "capacitor-settings",
-  "version": "0.0.1",
+  "version": "0.0.2",
 "description": "An Ionic Capacitor plugin to manage device settings and permissions directly from your app, including battery optimization, location accuracy, and more.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
   "files": [
-  "dist/",
-  "android/"
+    "android/src/main/",
+    "android/build.gradle",
+    "dist/",
+    "ios/Sources",
+    "ios/Tests",
+    "Package.swift",
+    "CapacitorSettings.podspec"
 ],
   "author": "USAMA",
   "license": "MIT",
